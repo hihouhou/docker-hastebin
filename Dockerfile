@@ -15,7 +15,7 @@ RUN apt-get update && \
 #    apt-get install -y g++ curl libssl-dev apache2-utils git-core redis-server python make
 
 # install node.js
-RUN git clone git://github.com/joyent/node.git && \
+RUN git clone https://github.com/nodejs/node.git && \
 cd node && \
 ./configure && \
 make && \
